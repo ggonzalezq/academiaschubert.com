@@ -27,8 +27,8 @@
 		global $wp_styles;
 
 		// Load Comments
-		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
-			wp_enqueue_script( 'comment-reply' );
+//		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
+//			wp_enqueue_script( 'comment-reply' );
 
 		// Load Stylesheets
 //		wp_enqueue_style( 'html5reset-reset', get_template_directory_uri() . '/reset.css' );
@@ -41,6 +41,9 @@
 		// Modernizr
 		// This is an un-minified, complete version of Modernizr. Before you move to production, you should generate a custom build that only has the detects you need.
 		// wp_enqueue_script( 'html5reset-modernizr', get_template_directory_uri() . '/_/js/modernizr-2.6.2.dev.js' );
+                
+                
+            wp_enqueue_script( 'global', get_template_directory_uri() . '/js/global.js', array( 'jquery' ) );
 
 	}
 	add_action( 'wp_enqueue_scripts', 'html5reset_scripts_styles' );
@@ -87,11 +90,11 @@
 	}
 
 	// Clean up the <head>, if you so desire.
-	//	function removeHeadLinks() {
-	//    	remove_action('wp_head', 'rsd_link');
-	//    	remove_action('wp_head', 'wlwmanifest_link');
-	//    }
-	//    add_action('init', 'removeHeadLinks');
+		function removeHeadLinks() {
+	    	remove_action('wp_head', 'rsd_link');
+	    	remove_action('wp_head', 'wlwmanifest_link');
+	    }
+	    add_action('init', 'removeHeadLinks');
 
 	// Custom Menu
 	register_nav_menu( 'primary', __( 'Navigation Menu', 'html5reset' ) );
@@ -129,5 +132,17 @@
 			esc_attr( get_the_author() )
 		);
 	}
-
+        
+        //  
+        add_filter( 'show_admin_bar', '__return_false' );
+        
+        function is_schubert_camerata()
+        {
+            if( substr( $_SERVER['REQUEST_URI'], 0, 19 ) === "/schubert-camerata/" )
+            {
+                return true;
+            }
+               
+            return false;
+        }
 ?>

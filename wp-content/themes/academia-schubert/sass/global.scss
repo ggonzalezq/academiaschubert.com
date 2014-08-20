@@ -1,0 +1,206 @@
+$open-sans:'Open Sans', sans-serif;
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    color:#fff;
+    font:14px/18px $open-sans;
+}
+#wrapper {
+    
+}
+#main-header {
+    background:#000;
+    border-bottom:1px solid #bbbaba;
+    height:102px;
+    .wrapper {
+        position:relative;
+    }
+}
+#branding {
+    left:0;
+    position:absolute;
+    top:0;
+    a {
+        background:url(images/theme-1/schubert.jpg) no-repeat;
+        display:block;
+        height:149px;
+        outline:0;
+        text-indent:-9999px;
+        width:143px;
+    }
+}
+#main-nav {
+    left:158px;
+    position:absolute;
+    top:44px;
+    ul {
+        font-size:0;
+        height:14px;
+    }
+    li {
+        display:inline-block;
+        margin:0 15px;
+    }
+    a {
+        color:#fff;
+        display:inline-block;
+        font:14px/14px $open-sans;
+        text-decoration:none;
+        text-transform:uppercase;
+    }
+}
+#social-nav {
+    position:absolute;
+    right:0;
+    top:28px;
+    ul {
+        font-size:0;
+    }
+    li {
+        display:inline-block;
+        margin:0 7px;
+    }
+    a {
+        background-repeat:no-repeat;
+        display:inline-block;
+        height:46px;
+        text-indent:-9999px;
+        width:47px;
+    }
+    .facebook {
+        a {
+            background-image:url(images/theme-1/facebook.png);
+        }
+    }
+    .twitter {
+        a {
+            background-image:url(images/theme-1/twitter.png);   
+        }
+    }
+    .youtube {
+        a {
+            background-image:url(images/theme-1/youtube.png);
+        }
+    }
+}
+#main-section {
+    background:url(images/theme-1/1.jpg) no-repeat center center / cover;
+    min-height:500px;
+    .wrapper {
+        padding:66px 0 0 20px;
+    }
+}
+#main-footer {
+    background:rgba(0,0,0,0.5);
+    bottom:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    .wrapper {
+        height:60px;
+        padding:20px 0;
+    }    
+    p {
+        color:#fff;
+        font:300 26px/30px $open-sans;
+        text-align:center;
+    }
+    .black-button {
+        position:absolute;
+        right:20px;
+        top:20px;
+    }
+}
+#schubert-camerata {
+    margin:-155.5px 0 0 0;
+    position:fixed;
+    right:0;
+    top:50%;
+    a {
+        background:url(images/theme-1/schubert-camerata.png) no-repeat;
+        display:block;
+        height:311px;
+        outline:0;
+        text-indent:-9999px;
+        width:153px;
+    }
+}
+#schubert-academy {
+    left:0;
+    margin:-155.5px 0 0 0;
+    position:fixed;
+    top:50%;
+    a {
+        background:url(images/theme-2/schubert-academia.png) no-repeat;
+        display:block;
+        height:311px;
+        outline:0;
+        text-indent:-9999px;
+        width:156px;
+    }
+}
+.schubert-camerata {
+    #main-header {
+        background:#66071a;
+    }
+    #branding {
+        a {
+            background:url(images/theme-2/schubert-camerata.jpg) no-repeat;
+            height:167px;
+            width:147px;
+        }   
+    }
+    #social-nav {
+        .facebook {
+            a {
+                background-image:url(images/theme-2/facebook.png);
+            }
+        }
+        .twitter {
+            a {
+                background-image:url(images/theme-2/twitter.png);   
+            }
+        }
+        .youtube {
+            a {
+                background-image:url(images/theme-2/youtube.png);
+            }
+        }
+    }
+    #main-section {
+        background:url(images/theme-2/2.jpg) no-repeat center center / cover;
+    }
+    #main-footer {  
+        background:rgba(102,7,26,0.5);
+        p {
+            font:300 26px/60px $open-sans;
+        }
+    }
+}
+.black-button {
+    background: rgb(125,126,125);
+    background: -moz-linear-gradient(left,  rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1)));
+    background: -webkit-linear-gradient(left,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+    background: -o-linear-gradient(left,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+    background: -ms-linear-gradient(left,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+    background: linear-gradient(to right,  rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 );
+    border-radius:5px;
+    color:#fff;
+    display:inline-block;
+    font:300 15px/60px $open-sans;
+    padding:0 20px;
+    position:relative;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+.none {
+    display:none;
+}
+.wrapper {
+    max-width:960px;
+    margin:0 auto;
+}

@@ -1,39 +1,26 @@
-<?php
-/**
- * @package WordPress
- * @subpackage HTML5-Reset-WordPress-Theme
- * @since HTML5 Reset 2.0
- */
-?>
-		<footer id="footer" class="source-org vcard copyright" role="contentinfo">
-			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
-		</footer>
-
-	</div>
-
+                </div>
+            </section><!--#/main-section-->
+            <footer id="main-footer">
+                <div class="wrapper">
+                    <?php if( is_schubert_camerata() ): ?>
+                    <p>Imagina tu boda con Shubert Camerata</p>
+                    <a href="" class="black-button">Solicitar cotización</a>
+                    <?php else: ?>
+                    <p>Formamos artistas sensibles que aportan <br />a la sociedad y son un ejemplo aseguir</p>
+                    <a href="" class="black-button">Solicitar información</a>
+                    <?php endif; ?>
+                </div>
+            </footer><!--#/main-footer-->
+        </div><!--#/wrapper-->
+        <?php if( is_schubert_camerata() ): ?>
+        <div id="schubert-academy">
+            <a href="/">Schubert academia</a>
+        </div><!--#/schubert-camerata-->
+        <?php else: ?>
+        <div id="schubert-camerata">
+            <a href="/schubert-camerata/">Schubert camerata</a>
+        </div><!--#/schubert-camerata-->
+        <?php endif; ?>
 	<?php wp_footer(); ?>
-
-
-<!-- jQuery is called via the WordPress-friendly way via functions.php -->
-
-<!-- this is where we put our custom functions -->
-<script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
-
-<!-- Asynchronous google analytics; this is the official snippet.
-         Replace UA-XXXXXX-XX with your site's ID and domainname.com with your domain, then uncomment to enable.
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-XXXXXX-XX', 'domainname.com');
-  ga('send', 'pageview');
-
-</script>
--->
-
-</body>
-
+    </body>
 </html>
