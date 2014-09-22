@@ -145,4 +145,14 @@
                
             return false;
         }
+        
+        
+        function get_wrapper_classes()
+        {
+            
+        }
+        
+        echo 'http' . ( isset( $_SERVER['HTTPS'] ) ? 's' : '' ) . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        die();
+        
 ?>

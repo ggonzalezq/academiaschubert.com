@@ -200,13 +200,13 @@ input[type=button] {
 .clearfix {
   zoom: 1; }
 
-body {
-  color: #fff;
-  font: 14px/18px "Open Sans", sans-serif; }
-
 * {
   margin: 0;
   padding: 0; }
+
+body {
+  color: #292929;
+  font: 14px/18px "Open Sans", sans-serif; }
 
 #main-header {
   background: #000;
@@ -267,7 +267,8 @@ body {
     background-image: url(images/theme-1/youtube.png); }
 
 #main-section {
-  background: url(images/theme-1/1.jpg) no-repeat center center/cover;
+  /*background:url(images/theme-1/1.jpg) no-repeat center center / cover;*/
+  background: #f6f6f6;
   min-height: 500px; }
   #main-section .wrapper {
     padding: 66px 0 0 20px; }
@@ -359,3 +360,54 @@ body {
 .wrapper {
   max-width: 960px;
   margin: 0 auto; }
+
+#classes .title {
+  border-bottom: 1px solid #5d0718;
+  margin: 0 0 50px 0;
+  text-align: center; }
+  #classes .title h1 {
+    background: #f6f6f6;
+    color: #5d0718;
+    display: inline-block;
+    font: 35px/35px "Trajan Pro", sans-serif;
+    padding: 0 16px;
+    position: relative;
+    text-transform: uppercase;
+    top: 17px; }
+#classes p {
+  color: #292929;
+  font: 16px/20px "Myriad Pro", sans-serif;
+  margin: 0 0 20px 0;
+  text-align: center; }
+
+#classes-nav {
+  margin: 0 0 50px 0; }
+  #classes-nav ul {
+    font-size: 0;
+    text-align: center; }
+  #classes-nav li {
+    display: inline-block;
+    margin: 0 30px; }
+  #classes-nav a {
+    background-repeat: no-repeat;
+    background-position: top center;
+    color: #3d3c3c;
+    display: block;
+    font: 300 15px/15px "Open Sans", sans-serif;
+    min-width: 78px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 90px 0 0 0; }
+  #classes-nav .violin a {
+    background-image: url(images/theme-1/violin.png); }
+  #classes-nav .guitar a {
+    background-image: url(images/theme-1/guitar.png); }
+  #classes-nav .singing a {
+    background-image: url(images/theme-1/singing.png); }
+  #classes-nav .piano a {
+    background-image: url(images/theme-1/piano.png); }
+  #classes-nav .musical-appreciation a {
+    background-image: url(images/theme-1/musical-appreciation.png); }
+  #classes-nav .solfeo a {
+    background-image: url(images/theme-1/solfeo.png); }

@@ -1,0 +1,66 @@
+#classes {
+    .title {
+        border-bottom:1px solid #5d0718;
+        margin:0 0 50px 0;
+        text-align:center;
+        h1 {
+            background:#f6f6f6;
+            color:#5d0718;
+            display:inline-block;
+            font:35px/35px $trajan-pro;
+            padding:0 16px;
+            position:relative;
+            text-transform:uppercase;
+            top:17px;
+        }
+    }
+    p {
+        color:#292929;
+        font:16px/20px $myriad-pro;
+        margin:0 0 20px 0;
+        text-align:center;
+    }
+}
+#classes-nav {
+    margin:0 0 50px 0;
+    ul {
+        font-size:0;
+        text-align:center;
+    }
+    li {
+        display:inline-block;
+        margin:0 30px;
+    }
+    a {
+        background-repeat:no-repeat;
+        background-position:top center;
+        color:#3d3c3c;
+        display:block;
+        font:300 15px/15px $open-sans;
+        min-width:78px;
+        text-align:center;
+        text-decoration:none;
+        text-transform:uppercase;
+        padding:90px 0 0 0;
+    }
+    .violin a {
+        background-image:url(images/theme-1/violin.png);
+    }
+    .guitar a {
+        background-image:url(images/theme-1/guitar.png);
+    }
+    .singing a {
+        background-image:url(images/theme-1/singing.png);
+    }
+    .piano a {
+        background-image:url(images/theme-1/piano.png);
+    }
+    .musical-appreciation a {
+        background-image:url(images/theme-1/musical-appreciation.png);
+    }
+    .solfeo a {
+        background-image:url(images/theme-1/solfeo.png);
+    }
+    
+    
+}

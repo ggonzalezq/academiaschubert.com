@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body> 
         <div id="wrapper"<?php if( is_schubert_camerata() ): ?> class="schubert-camerata"<?php endif; ?>>
             <header id="main-header">
                 <div class="wrapper">
@@ -41,8 +41,8 @@
                     </nav><!--#/main-nav-->
                     <nav id="social-nav">
                         <ul>
-                            <li class="facebook"><a href="http://www.facebook.com/pages/Schubert-Tu-Academia-de-M%C3%BAsica/145487628869580" target="_blank">Facebook</a></li>
-                            <li class="twitter"><a href="http://twitter.com/SchubertAcademy" target="_blank">Twitter</a></li>
+                            <li class="facebook"><a href="https://www.facebook.com/SchubertAcademia" target="_blank">Facebook</a></li>
+                            <li class="twitter"><a href="https://twitter.com/SchubertAcademy" target="_blank">Twitter</a></li>
                             <li class="youtube"><a href="" target="_blank">Youtube</a></li>
                         </ul>
                     </nav><!--#/social-nav-->

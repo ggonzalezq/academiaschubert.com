@@ -1,10 +1,14 @@
 $open-sans:'Open Sans', sans-serif;
+$trajan-pro:'Trajan Pro', sans-serif;
+$myriad-pro:'Myriad Pro', sans-serif;
+
+
 * {
     margin:0;
     padding:0;
 }
 body {
-    color:#fff;
+    color:#292929;
     font:14px/18px $open-sans;
 }
 #wrapper {
@@ -86,7 +90,13 @@ body {
     }
 }
 #main-section {
-    background:url(images/theme-1/1.jpg) no-repeat center center / cover;
+    
+    
+    /*background:url(images/theme-1/1.jpg) no-repeat center center / cover;*/
+    
+    background:#f6f6f6;
+    
+    
     min-height:500px;
     .wrapper {
         padding:66px 0 0 20px;
