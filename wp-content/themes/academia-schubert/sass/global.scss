@@ -26,6 +26,7 @@ body {
     left:0;
     position:absolute;
     top:0;
+    z-index:99999;
     a {
         background:url(images/theme-1/schubert.jpg) no-repeat;
         display:block;
@@ -45,7 +46,7 @@ body {
     }
     li {
         display:inline-block;
-        margin:0 15px;
+        margin:0 10px;
     }
     a {
         color:#fff;
@@ -90,18 +91,18 @@ body {
     }
 }
 #main-section {
-    
-    
-    /*background:url(images/theme-1/1.jpg) no-repeat center center / cover;*/
-    
     background:#f6f6f6;
-    
-    
     min-height:500px;
     .wrapper {
         padding:66px 0 0 20px;
     }
 }
+.front-page {
+    #main-section {
+        background:url(images/theme-1/1.jpg) no-repeat center center / cover;
+    }    
+}
+
 #main-footer {
     background:rgba(0,0,0,0.5);
     bottom:0;
@@ -213,4 +214,23 @@ body {
 .wrapper {
     max-width:960px;
     margin:0 auto;
+}
+.view-schedules {
+    border:1px solid #f6f6f6;
+    color:#f6f6f6;
+    display:inline-block;
+    font:13px/56px $open-sans;
+    min-width:200px;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+.center {
+    text-align:center;
+}
+.pull-left {
+    float:left;
+}
+.pull-right {
+    float:right;
 }

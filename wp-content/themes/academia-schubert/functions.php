@@ -42,8 +42,8 @@
 		// This is an un-minified, complete version of Modernizr. Before you move to production, you should generate a custom build that only has the detects you need.
 		// wp_enqueue_script( 'html5reset-modernizr', get_template_directory_uri() . '/_/js/modernizr-2.6.2.dev.js' );
                 
-                
-            wp_enqueue_script( 'global', get_template_directory_uri() . '/js/global.js', array( 'jquery' ) );
+            wp_enqueue_script( 'jquery-nivo-slider', get_template_directory_uri() . '/js/vendor/jquery.nivo.slider.pack.js', array( 'jquery' ) );                        
+            wp_enqueue_script( 'global', get_template_directory_uri() . '/js/global.js', array( 'jquery-nivo-slider' ) );
 
 	}
 	add_action( 'wp_enqueue_scripts', 'html5reset_scripts_styles' );
@@ -145,14 +145,25 @@
                
             return false;
         }
-        
-        
         function get_wrapper_classes()
         {
+            $arURL = array();
+            $sClasses = '';
+            $sURL = '';
+
+            $sURL = 'http' . ( isset( $_SERVER['HTTPS'] ) ? 's' : '' ) . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+            $arURL = parse_url( $sURL );
+            $sClasses = $arURL['path'];
+            $sClasses = trim( $sClasses, '/' );
+            $sClasses = str_replace( '/', ' ', $sClasses );
             
+            if( ( $sClasses === '' ) &&
+                ( is_front_page() ) )
+            {
+                $sClasses = 'front-page';
+            }
+            
+
+            return $sClasses;   
         }
-        
-        echo 'http' . ( isset( $_SERVER['HTTPS'] ) ? 's' : '' ) . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        die();
-        
 ?>

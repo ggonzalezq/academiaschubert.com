@@ -1,4 +1,4 @@
-#classes {
+.clases {
     .title {
         border-bottom:1px solid #5d0718;
         margin:0 0 50px 0;
@@ -14,6 +14,8 @@
             top:17px;
         }
     }
+}
+#classes {
     p {
         color:#292929;
         font:16px/20px $myriad-pro;
@@ -21,6 +23,7 @@
         text-align:center;
     }
 }
+
 #classes-nav {
     margin:0 0 50px 0;
     ul {

@@ -12,7 +12,7 @@
         <?php wp_head(); ?>
     </head>
     <body> 
-        <div id="wrapper"<?php if( is_schubert_camerata() ): ?> class="schubert-camerata"<?php endif; ?>>
+        <div id="wrapper"<?php if( get_wrapper_classes() !== ''): ?> class="<?php echo get_wrapper_classes(); ?>"<?php endif; ?>>
             <header id="main-header">
                 <div class="wrapper">
                     <div id="branding">
@@ -32,9 +32,9 @@
                             <?php else: ?>
                             <li><a href="/clases/">Clases</a></li>
                             <li><a href="/espacios/">Espacios</a></li>
-                            <li><a href="/admision/">Admisión</a></li>
                             <li><a href="/galeria/">Galería</a></li>
-                            <li><a href="/la-academia/">La academía</a></li>
+                            <li><a href="/horarios/">Horarios</a></li>
+                            <li><a href="/responsabilidad-social/">Responsabilidad social</a></li>
                             <li><a href="/contacto/">Contacto</a></li>
                             <?php endif; ?>
                         </ul>
