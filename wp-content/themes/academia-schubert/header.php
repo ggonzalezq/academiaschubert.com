@@ -41,9 +41,9 @@
                     </nav><!--#/main-nav-->
                     <nav id="social-nav">
                         <ul>
-                            <li class="facebook"><a href="https://www.facebook.com/SchubertAcademia" target="_blank">Facebook</a></li>
-                            <li class="twitter"><a href="https://twitter.com/SchubertAcademy" target="_blank">Twitter</a></li>
-                            <li class="youtube"><a href="" target="_blank">Youtube</a></li>
+                            <li class="facebook"><a href="https://www.facebook.com/SchubertAcademia" target="_blank" class="push">Facebook</a></li>
+                            <li class="twitter"><a href="https://twitter.com/SchubertAcademy" target="_blank" class="push">Twitter</a></li>
+                            <li class="youtube"><a href="" target="_blank" class="push">Youtube</a></li>
                         </ul>
                     </nav><!--#/social-nav-->
                 </div>

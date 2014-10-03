@@ -449,6 +449,8 @@ body {
     font: 14px/14px "Open Sans", sans-serif;
     text-decoration: none;
     text-transform: uppercase; }
+  #main-nav a:hover {
+    color: #6b6b6b; }
 
 #social-nav {
   position: absolute;
@@ -539,6 +541,8 @@ body {
   background-image: url(images/theme-2/youtube.png); }
 .schubert-camerata #main-section {
   background: url(images/theme-2/2.jpg) no-repeat center center/cover; }
+.schubert-camerata .title {
+  display: none; }
 .schubert-camerata #main-footer {
   background: rgba(102, 7, 26, 0.5); }
   .schubert-camerata #main-footer p {
@@ -587,6 +591,33 @@ body {
 
 .pull-right {
   float: right; }
+
+@keyframes push {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8); }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+.push {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0); }
+
+.push:hover,
+.push:focus,
+.push:active {
+  -webkit-animation-name: push;
+  animation-name: push;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
 
 .clases .title {
   border-bottom: 1px solid #5d0718;
